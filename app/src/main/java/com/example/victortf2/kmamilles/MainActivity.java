@@ -1,5 +1,6 @@
 package com.example.victortf2.kmamilles;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -38,5 +39,10 @@ public class MainActivity extends AppCompatActivity {
             String skm = Float.toString(km);
             edit_km.setText(skm);
         }
+    }
+
+    public void ABOUT(View view) {
+        Intent about = new Intent(this, AboutActivity.class);
+        startActivity(about);
     }
 }
